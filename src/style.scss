@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+@media screen and (max-width: 950px) {
+  .intro {
+    .profile-pic {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      float: none;
+    }
+    .about-me {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+      display: block;
+      float: none;
+    }
+    .heading {
+      .name {
+        display: block;
+      }
+    }
+  }
+  .banner {
+    .name {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    .navbar {
+      display: none;
+    }
+  }
+
+  .intro {
+    .navbar {
+      display: block;
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .contact {
+    table {
+      display: none;
+    }
+    ul {
+      display: block;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+
+  background-image: url('./open_sea.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 0;
+  /* height / width = 400 / 904 */
+  padding-top: 44.2%;
+  opacity: 0.9;
+
+  .name {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 4rem;
+    color: white;
+  }
+
+  ul {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+
+    list-style: none;
+
+    li {
+      display: inline;
+      a {
+        text-decoration: none;
+        color:white;
+        font-size: 1.3rem;
+        margin:  0 10px;
+      }
+      a:hover {
+        opacity: 0.7;
+      }
+
+    }
+
+  }
+}
+
+.intro {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background: linear-gradient(#efefef, #eee, #9b9891);
+
+  overflow: auto;
+
+  .name {
+    display: none;
+    font-size: 2.5rem;
+  }
+
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    li {
+      width: 100%;
+      text-align: center;
+      a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: black;
+      }
+      a:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #666fff;
+  }
+}
+
+.personal {
+  background: linear-gradient(#9b9891, #eee, #efefef);
+
+  p {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  float: left;
+
+  background-image: url('./me_1.jpg');
+  background-size: cover;
+  
+  border-radius: 100%;
+}
+
+.about-me {
+  max-width: 600px;
+  
+  float: right;
+}
+
+.projects {
+  background: linear-gradient(#9b9891, #eee, #9b9891);
+
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+.project-item {
+  position: relative;
+  width: 400px;
+  height: 277px;
+
+  margin: 10px;
+
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-item:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+.project-item.active:before {
+  background: linear-gradient(rgba(0,0,0,0.5),
+  rgba(0,0,0,0.9));
+}
+
+.android {
+  height: 400px;
+  width: 277px;
+}
+
+.project-item, .android {
+  .title {
+    margin: 10px 0;
+    font-size: 1.3rem;
+  }
+}
+
+#project-1 {
+  background-image: url('./odin-facebook-preview.png');
+}
+
+#project-2 {
+  background-image: url('./who-is-in-preview.png');
+}
+
+#project-3 {
+  background-image: url('./odin-chess-preview.png');
+}
+
+#project-4 {
+  background-image: url('./where-is-waldo-preview.png');
+}
+
+#project-5 {
+  background-image: url('./battleship-preview.png');
+}
+
+#project-6 {
+  background-image: url('./liquor-cabinet-preview.png');
+}
+
+#project-7{
+  background-image: url('./generic_type.png');
+}
+
+.github-link, .live-link, .google-play-link {
+  position: relative;
+  display: inline-block;
+
+  width: 35px;
+  height: 35px;
+
+  margin: 5px;
+
+  background-image: url('./github-icon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.github-link {
+  background-image: url('./github-icon.png');
+}
+
+.live-link {
+  background-image: url('./live-icon.png');
+}
+
+.google-play-link {
+  background-image: url('./google_play.png');
+}
+
+.contact {
+  height: 500px;
+  background: linear-gradient(#efefef, black, black);
+  color: white;
+  .heading {
+    margin-top: 250px;
+  }
+
+  a {
+    text-decoration: none;
+    color:white;
+  }
+
+  table {
+    margin: auto;
+    margin-top: 20px;
+    td {
+      padding: 40px;
+      padding-top: 0px;
+    }
+  }
+
+  ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    li{
+      width: 100%;
+      a {
+        width: 100%;
+      }
+    }
+  }
+
+}
