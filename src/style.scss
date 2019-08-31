@@ -20,12 +20,13 @@
         display: block;
       }
     }
+
   }
   .banner {
     .name {
-      display: none;
-    }
+      display: none; }
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -61,9 +62,22 @@
 
 body {
   font-family: 'Titillium Web', sans-serif;
+  background-color: #60ad5e;
 }
 
+p {
+  color: #ffffff;
+}
+
+span {
+  color: #ffffff;
+}
+
+
 h2 {
+  color: #ffffff;
+  background-color: #005005;
+  font-size: 2.5em;
   margin: 0;
   padding: 0;
 }
@@ -72,13 +86,12 @@ h2 {
   width: 100%;
   position: relative;
 
-  background-image: url('./open_sea.jpg');
+  background-color: #005005;
   background-size: contain;
   background-repeat: no-repeat;
   height: 0;
   /* height / width = 400 / 904 */
-  padding-top: 44.2%;
-  opacity: 0.9;
+  padding-top: 10%;
 
   .name {
     position: absolute;
@@ -118,9 +131,10 @@ h2 {
   padding-left: 20px;
   padding-right: 20px;
 
-  background: linear-gradient(#efefef, #eee, #9b9891);
-
   overflow: auto;
+
+  background-clip: content-box;
+  background-color: #2e7d32;
 
   .name {
     display: none;
@@ -150,18 +164,18 @@ h2 {
 
   a {
     text-decoration: none;
-    color: #666fff;
+    color: #adadad;
   }
 }
 
 .personal {
-  background: linear-gradient(#9b9891, #eee, #efefef);
 
   p {
     max-width: 600px;
     margin: auto;
     margin-bottom: 0;
     margin-top: 1rem;
+    padding-bottom: 20px;
   }
 
 }
@@ -170,7 +184,6 @@ h2 {
   max-width: 1000px;
   margin: 0 auto;
   padding-top: 20px;
-
 }
 
 .heading {
@@ -191,13 +204,7 @@ h2 {
 
 .about-me {
   max-width: 600px;
-  
   float: right;
-}
-
-.projects {
-  background: linear-gradient(#9b9891, #eee, #9b9891);
-
 }
 
 .projects-container {
@@ -276,6 +283,20 @@ h2 {
   background-image: url('./generic_type.png');
 }
 
+#project-8{
+  background-image: url('./ss-1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#project-9{
+  background-image: url('./movieexamprepscreenshot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .github-link, .live-link, .google-play-link {
   position: relative;
   display: inline-block;
@@ -302,9 +323,17 @@ h2 {
   background-image: url('./google_play.png');
 }
 
+.personal {
+  .container {
+    background-clip: content-box;
+    background-color: #2e7d32;
+  }
+}
+
 .contact {
   height: 500px;
-  background: linear-gradient(#efefef, black, black);
+
+  background: linear-gradient(#60ad5e, #005005, #005005);
   color: white;
   .heading {
     margin-top: 250px;
@@ -312,8 +341,7 @@ h2 {
 
   a {
     text-decoration: none;
-    color:white;
-  }
+    color:white; }
 
   table {
     margin: auto;

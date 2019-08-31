@@ -66,6 +66,20 @@ export const Projects = {
       github: 'https://github.com/GarrettForsyth/generic_type'
     }));
 
+    projects.push(createProject({
+      name: 'Spark Stories',
+      description: 'User driven micro stories.',
+      element: document.querySelector('#project-8'),
+      github: 'https://github.com/GarrettForsyth/SparkStories'
+    }));
+
+    projects.push(createProject({
+      name: 'MovieExamPrep',
+      description: 'A movie browser.',
+      element: document.querySelector('#project-9'),
+      github: 'https://github.com/GarrettForsyth/movie_exam_prep'
+    }));
+
     return projects;
   }
 };
